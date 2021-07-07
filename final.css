@@ -28,3 +28,8 @@ p {
 #q3 {
 	border: 4px solid MediumPurple;
 }
+
+p:hover {
+	background-color: Indigo;
+	color: Thistle;
+}
