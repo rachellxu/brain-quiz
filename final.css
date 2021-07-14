@@ -33,3 +33,10 @@ p:hover {
 	background-color: Indigo;
 	color: Thistle;
 }
+
+
+/*this is for disappearing stuff*/
+
+.hidden {
+	display: none !important;
+}
