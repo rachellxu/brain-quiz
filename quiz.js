@@ -79,12 +79,72 @@ function main() {
 // const clickMeButton = document.getElementById('button');
 // clickMeButton.addEventListener('click', onClickButton);
 
+// function onClickButton_practice(event) {
+// 	let target = event.target;
+//     console.log(target);
+//     console.log(target.id);
+// }
+
+realList = [0,0,0];
+numQuestionsAnswered = 0;
+
 function onClickButton(event) {
 	let target = event.target;
-    console.log(target);
-    console.log(target.id);
+    console.log(target); 
+
+    let idString = target.id;
+    console.log(idString);
+
+    let qNumString = idString.substring(0,2);
+    console.log(qNumString);
+
+    let ansString = idString.substring(3);
+    console.log(ansString);
+
+	// gray - set to finished
+	const q_Box = document.getElementById(qNumString);
+	q_Box.classList.add("finished");
+
+	// make answer selected
+	const q_Ans = document.getElementById(idString);
+	q_Ans.classList.add("selected");
+
+	// update list
+	value1 = ansString;
+
+	if (value1 === "a") {
+		realList[0] += 1;
+	} else if (value1 === "b") {
+		realList[1] += 1;
+	} else if (value1 === "c") {
+		realList[2] += 1;
+	} 
+
+	console.log(realList);
+
+	// record how many questions are answered
+	++numQuestionsAnswered; 
+	console.log(numQuestionsAnswered);
+
+	// give result if answered 3
+	if (numQuestionsAnswered === 3) {
+
+		console.log("Here is your result!");
+
+		if (realList[0] >= 2) {
+			console.log("You have galaxy brain");
+		} else if (realList[1] >= 2) {
+			console.log("You have chicken brain");
+		} else if (realList[2] >= 2) {
+			console.log("You have big brain");
+		} else {
+			console.log("You have chicken brain haha");
+		}
+	}
+
 }
- 
+
+
 const q1_a_Button = document.getElementById('q1_a');
 q1_a_Button.addEventListener('click', onClickButton);
  
@@ -114,8 +174,11 @@ q3_c_Button.addEventListener('click', onClickButton);
 
 /* ----------------- */
 
+// const q1_Box = document.getElementById('q1');
+// q1_Box.classList.add("finished");
 
-
+// const q1_c_Ans = document.getElementById("q1_c");
+// q1_c_Ans.classList.add("selected");
 
 
 
