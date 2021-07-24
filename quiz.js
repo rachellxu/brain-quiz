@@ -136,7 +136,7 @@ function onClickButton(event) {
 		if (realList[0] >= 2) {
 			result = "You got a galaxy brain, good 4 u!";
 		} else if (realList[1] >= 2) {
-			result = "YYou got a chicken brain, haha.";
+			result = "You got a chicken brain, haha.";
 		} else if (realList[2] >= 2) {
 			result = "You got a big brain, lame.";
 		} else {
