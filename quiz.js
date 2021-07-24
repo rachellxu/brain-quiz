@@ -59,9 +59,67 @@ function main() {
 	}
 }
 
-main();
+// main();
 
 /* ----------------- */
+
+// setTimeout(() => { console.log("Surprise!") }, 1000);
+// setTimeout(() => { console.log("Second Surprise!") }, 2000);
+// setTimeout(() => { console.log("Third Surprise!") }, 3000);
+// setTimeout(() => { console.log("Fourth Surprise!") }, 4000);
+// setTimeout(() => { window.alert("EXTRA Surprise!") }, 5000);
+
+/* ----------------- */
+
+// function onClickButton(event) {
+//     console.log("cat meow");
+//     console.log(10*10);
+// }
+ 
+// const clickMeButton = document.getElementById('button');
+// clickMeButton.addEventListener('click', onClickButton);
+
+function onClickButton(event) {
+	let target = event.target;
+    console.log(target);
+    console.log(target.id);
+}
+ 
+const q1_a_Button = document.getElementById('q1_a');
+q1_a_Button.addEventListener('click', onClickButton);
+ 
+const q1_b_Button = document.getElementById('q1_b');
+q1_b_Button.addEventListener('click', onClickButton);
+ 
+const q1_c_Button = document.getElementById('q1_c');
+q1_c_Button.addEventListener('click', onClickButton);
+
+ const q2_a_Button = document.getElementById('q2_a');
+q2_a_Button.addEventListener('click', onClickButton);
+ 
+const q2_b_Button = document.getElementById('q2_b');
+q2_b_Button.addEventListener('click', onClickButton);
+ 
+const q2_c_Button = document.getElementById('q2_c');
+q2_c_Button.addEventListener('click', onClickButton);
+
+const q3_a_Button = document.getElementById('q3_a');
+q3_a_Button.addEventListener('click', onClickButton);
+ 
+const q3_b_Button = document.getElementById('q3_b');
+q3_b_Button.addEventListener('click', onClickButton);
+ 
+const q3_c_Button = document.getElementById('q3_c');
+q3_c_Button.addEventListener('click', onClickButton);
+
+/* ----------------- */
+
+
+
+
+
+
+
 
 
 
