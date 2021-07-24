@@ -25,10 +25,6 @@ p {
 	margin-top: 12px;
 }
 
-#q3 {
-	border: 4px solid MediumPurple;
-}
-
 p:hover {
 	background-color: Indigo;
 	color: Thistle;
@@ -39,4 +35,25 @@ p:hover {
 
 .hidden {
 	display: none !important;
+}
+
+/*for marking finished and selected*/
+
+.finished h2 {
+	background-color: DarkGray;
+	color: white;
+}
+
+.finished p {
+	background-color: LightGray;
+	color: DarkGray;
+}
+
+p.selected {
+	background-color: DarkGray;
+	color: white;
+}
+
+.finished {
+	border: 4px solid DarkGray;
 }
