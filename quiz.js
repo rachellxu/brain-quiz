@@ -131,15 +131,21 @@ function onClickButton(event) {
 
 		console.log("Here is your result!");
 
+		let result = "";
+
 		if (realList[0] >= 2) {
-			console.log("You have galaxy brain");
+			result = "You got a galaxy brain, good 4 u!";
 		} else if (realList[1] >= 2) {
-			console.log("You have chicken brain");
+			result = "YYou got a chicken brain, haha.";
 		} else if (realList[2] >= 2) {
-			console.log("You have big brain");
+			result = "You got a big brain, lame.";
 		} else {
-			console.log("You have chicken brain haha");
-		}
+			result = "You have chicken brain, haha.";
+		} 	
+
+		// update screen
+		const resultBox = document.getElementById("to_change");
+		resultBox.textContent = result;
 	}
 
 }
